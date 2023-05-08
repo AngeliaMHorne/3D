@@ -4,6 +4,10 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      fontFamily: {
+        'vollkorn': ['Vollkorn', 'serif'],
+        'newrocker': ['New Rocker', 'cursive'],
+      },
       colors: {
         primary: "#000000",
         secondary: "#fbdfaf",
