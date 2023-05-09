@@ -4,17 +4,18 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
     figma,
-    docker,
+    blender,
+    krita,
+    photoshop,
+    adobexd,
     meta,
     starbucks,
     tesla,
@@ -61,6 +62,26 @@ import {
 
   const technologies = [
     {
+      name: "blender",
+      icon: blender,
+    },
+    {
+      name: "krita",
+      icon: krita,
+    },
+    {
+      name: "photoshop",
+      icon: photoshop,
+    },
+    {
+      name: "figma",
+      icon: figma,
+    },
+    {
+      name: "adobexd",
+      icon: adobexd,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -73,16 +94,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -103,14 +116,6 @@ import {
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
 
