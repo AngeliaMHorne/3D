@@ -24,7 +24,7 @@ import {
     tripguide,
     threejs,
   } from "../assets";
-  
+
   export const navLinks = [
     {
       id: "about",
@@ -39,7 +39,7 @@ import {
       title: "Contact",
     },
   ];
-  
+
   const services = [
     {
       title: "Web Developer",
@@ -58,7 +58,7 @@ import {
       icon: creator,
     },
   ];
-  
+
   const technologies = [
     {
       name: "HTML 5",
@@ -113,7 +113,7 @@ import {
       icon: docker,
     },
   ];
-  
+
   const experiences = [
     {
       title: "React.js Developer",
@@ -168,7 +168,7 @@ import {
       ],
     },
   ];
-  
+
   const testimonials = [
     {
       testimonial:
@@ -195,7 +195,7 @@ import {
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
-  
+
   const projects = [
     {
       name: "Car Rent",
@@ -261,5 +261,5 @@ import {
       source_code_link: "https://github.com/",
     },
   ];
-  
+
   export { services, technologies, experiences, testimonials, projects };
