@@ -11,31 +11,29 @@ const Ball = (props) => {
     <Float
       speed={1.75}
       rotationIntensity={1}
-      floatIntensity={2}
+      floatIntensity={5}
     >
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
+      <ambientLight intensity={0.5} />
+      <directionalLight color="#23bdff" position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
         <sphereGeometry args={[.85]} />
         <meshStandardMaterial
-          color="#fff8eb"
+          color="#505050"
           polygonOffset
           polygonOffsetFactor={1}
-          flatShading
         />
         <Decal
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
           scale={1}
           map={decal}
-          flatShading
         />
       </mesh>
     </Float>
   )
 }
 
-const BallCanvas = ({icon}) => {
+const BallCanvas = ({title,icon}) => {
   return (
     <Canvas
       dpr={[1, 2]}
@@ -48,7 +46,8 @@ const BallCanvas = ({icon}) => {
           //maxPolarAngle={Math.PI / 2}
           //minPolarAngle={Math.PI / 2}
         />
-        <Ball imgUrl={icon} />
+        <Ball imgUrl={icon}
+        alt={title} />
       </Suspense>
       <Preload all />
     </Canvas>

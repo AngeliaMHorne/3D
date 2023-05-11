@@ -45,6 +45,16 @@
   );
 }
 
+.theblue-gradient {
+  background: #23bdff;
+  background: linear-gradient(-90deg, #23bdff 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #23bdff 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
 .card-bg {
   background-image: "../assets/herobg.png"
 }
@@ -122,7 +132,7 @@
 
 /* canvas- styles */
 .canvas-loader {
-  font-size: 10px;
+  font-size: 18px;
   width: 1em;
   height: 1em;
   border-radius: 50%;

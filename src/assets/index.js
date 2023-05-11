@@ -19,17 +19,22 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import blender from "./tech/blender.png";
 import krita from "./tech/krita.png";
-import photoshop from "./tech/photoshop.png";
-import adobexd from "./tech/adobexd.png";
+import adobecc from "./tech/adobecc.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import tow from "./company/tow.png";
+import freelance from "./company/freelance.png";
+import lunabat from "./company/lunabat.png";
+import nbc from "./company/nbc.png";
+import nbcfox from "./company/nbcfox.png";
+import slime from "./company/slime.png";
+import steak from "./company/steak.png";
+import tomb from "./company/tomb.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import meta from "./company/meta.png";
 
 export {
   logo,
@@ -50,15 +55,19 @@ export {
   reactjs,
   tailwind,
   threejs,
+  tow,
+  freelance,
+  lunabat,
+  nbc,
+  nbcfox,
+  slime,
+  steak,
+  tomb,
   meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
   blender,
   krita,
-  photoshop,
-  adobexd,
+  adobecc,
 };

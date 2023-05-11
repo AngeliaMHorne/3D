@@ -14,12 +14,16 @@ import {
     figma,
     blender,
     krita,
-    photoshop,
-    adobexd,
+    adobecc,
+    tow,
+    nbc,
+    freelance,
+    lunabat,
+    nbcfox,
+    slime,
+    steak,
+    tomb,
     meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
@@ -43,11 +47,11 @@ import {
 
   const services = [
     {
-      title: "Designer",
+      title: "Artist",
       icon: creator,
     },
     {
-      title: "Web Developer",
+      title: "3D Creator",
       icon: web,
     },
     {
@@ -62,24 +66,20 @@ import {
 
   const technologies = [
     {
-      name: "blender",
+      name: "Blender",
       icon: blender,
     },
     {
-      name: "krita",
+      name: "Krita",
       icon: krita,
     },
     {
-      name: "photoshop",
-      icon: photoshop,
+      name: "AdobeCC",
+      icon: adobecc,
     },
     {
-      name: "figma",
+      name: "Figma",
       icon: figma,
-    },
-    {
-      name: "adobexd",
-      icon: adobexd,
     },
     {
       name: "HTML 5",
@@ -114,92 +114,152 @@ import {
       icon: threejs,
     },
     {
-      name: "git",
+      name: "Git",
       icon: git,
     },
   ];
 
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Freelance Creative Work",
+      company_name: "Independent",
+      icon: slime,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "March 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Created 3D short film 'Mosquitoes' from concept ideation to final edit by modeling, rigging, texturing, lighting, and animating all assets.",
+        "Designed and developed 3D models for 'Slimes' game promo, incorporating texturing and lighting techniques to create engaging and visually appealing characters.",
+        "Modeled, textured, lit, and animated 'Stabl.Labs Coin' digital asset for blockchain company, ensuring high-quality output that is in keeping with brand.",
+        "Produced 3D animation for 'Blood Extraction' segment, utilizing industry-standard software for modeling, texturing, lighting, animation, and editing.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "NFT Designer",
+      company_name: "Independent",
+      icon: lunabat,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Sep 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Conceptualized, sculpted, textured, and animated bathead logo for Fang and its subsidiaries.",
+        "Brainstormed, modeled, textured, and rendered over 100 individual assets, sculpted 4 head models, and created an NFT generative of over 10,000 variants for the 'Luna Bats' project.",
+        "Created digitally hand-painted 2D characters for a Pokemon-inspired NFT game on Binance Smart Chain.",
+        "Engaged with the community and successfully sold multiple independent artworks within the NFT auction systems on-chain.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "3D Animator/Digital Promotion Design",
+      company_name: "Tomb Finance",
+      icon: tomb,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Aug 2021 - Jun 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Brainstormed and incorporated improved materials for company presence on various platforms to ease rebranding transition.",
+        "Spearheaded the design and development of social media promotional materials for the company, improving engagement by over 300%.",
+        "Conceptualized, modeled, animated and deployed solutions to multiple partnership announcements and wider crypto space events.",
+        "Produced 75+ reusable 3D assets, saving an average of 20 hours production time per week.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Head of Design",
+      company_name: "Steak Stake",
+      icon: steak,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Apr 2021 - Oct 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Led and directed design team in establishing and implementing branding principles, resulting in a cohesive brand identity across all channels.",
+        "Advised on color theory, typography, and grid layouts for web development, ensuring optimal user experience across devices.",
+        "Collaborated with team to brainstorm and execute logo design, delivering on both aesthetic and functional requirements.",
+      ],
+    },
+    {
+      title: "Freelance Artist",
+      company_name: "Independent",
+      icon: freelance,
+      iconBg: "#E6DEDD",
+      date: "2007 - Jan 2020",
+      points: [
+        "Expansive list of projects conceived, created and completed in a myriad of real world art mediums. Examples available on request.",
+      ],
+    },
+    {
+      title: "Owner/Operator/Dispatcher/Bookkeeper",
+      company_name: "Atlas Towing, LLC",
+      icon: tow,
+      iconBg: "#E6DEDD",
+      date: "Aug 2006 - Sep 2007",
+      points: [
+        "From promotional material creation to writing Operators' manual, handling day to day operations to keeping the books, I did everything except drive the trucks.",
+      ],
+    },
+    {
+      title: "Graphic Artist",
+      company_name: "KOB-TV (NM NBC Affiliate)",
+      icon: nbc,
+      iconBg: "#E6DEDD",
+      date: "Jun 2003 - Jun 2004",
+      points: [
+        "All on-air graphics - OTS, FS, HS, Maps, Animations, etc. - for three newscasts daily.",
+      ],
+    },
+    {
+      title: "Production Engineer",
+      company_name: "WSLS-TV (VA NBC Affiliate), Fox (VA Fox Affiliate)",
+      icon: nbcfox,
+      iconBg: "#E6DEDD",
+      date: "May 2002 - Jun 2003",
+      points: [
+        "All on-air graphics - OTS, FS, HS, Maps, Animations, etc. - for four newscasts daily. During the live newscasts, I ran Chyron, Floor Directed, operated Floor Cams and held a top position in the web division of the station.",
       ],
     },
   ];
 
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+  const certs = [
+      {
+        certs:[
+          "Introduction to Front-End Development",
+          "Programming with JavaScript",
+          "HTML and CSS in depth",
+          "Version Control",
+          "React Basics",
+          "Principles of UX/UI Design",
+          "Advanced React",
+          "Front-End Developer Capstone",
+          "Coding Interview Preparation",
+        ],
+        name: "Front-End Developer Specialization",
+        company: "Meta",
+        image: meta,
+        certlink: "https://coursera.org/share/bf4d077f483e0d1dfcdac1210607f119",
+      },
+      // other certifications
+      {
+        certs:[
+          "Foundations of User Experience (UX) Design",
+          "Start the UX Design Process: Empathize, Define, and Ideate",
+          "Build Wireframes and Low-Fidelity Prototypes",
+          "Conduct UX Research and Test Early Concepts",
+          "Create High-Fidelity Designs and Prototypes in Figma",
+          "Responsive Web Design in Adobe XD",
+          "Design a User Experience for Social Good & Prepare for Jobs",
+        ],
+        name: "Google UX Design Specialization",
+        company: "Google",
+        image: "https://coursera.org/share/6a36bb169b492c228b071389186c3c92",
+        certlink: "https://coursera.org/share/6a36bb169b492c228b071389186c3c92",
+      },
+      {
+        certs:[
+          "Visual Elements of User Interface Design",
+          "UX Design Fundamentals",
+          "Web Design: Strategy and Information Architecture",
+          "Web Design: Wireframes to Prototypes",
+        ],
+        name: "UX/UI Design Specialization",
+        company: "CalArts",
+        image: "https://coursera.org/share/7c6518448dcc9596dec3f7bffffdb838",
+        certlink: "https://coursera.org/share/7c6518448dcc9596dec3f7bffffdb838",
+      },
+    ];
 
   const projects = [
     {
@@ -267,4 +327,4 @@ import {
     },
   ];
 
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, certs, projects };
