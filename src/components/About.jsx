@@ -23,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => (
               <img
                 src={icon}
                 alt={title}
-                className='w-16 h-16 object-contain'
+                className='w-30 h-30 object-contain'
               />
               <h3 className='text-white text-[20px] font-bold text-bold'>{title}</h3>
             </div>
@@ -38,7 +38,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>~Overview~</h2>
       </motion.div>
       <motion.p
       variants={fadeIn("", "", 0.1, 1)}

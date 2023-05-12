@@ -1,12 +1,12 @@
 import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { github } from '../assets'
+import { figma, pdficon } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({ index, name, description, tags, image, figma_code_link, pdf_code_link, onFigmaLinkClick, onPdfLinkClick }) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
@@ -26,21 +26,36 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link})
             />
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
-                onClick={() => window.open
-                (source_code_link, _blank)}
+                onClick={() => onFigmaLinkClick(figma_code_link)}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
               >
                 <img
-                  src={github}
-                  alt={github}
+                  src={figma}
+                  alt={figma}
                   className='w-1/2 h-1/2 object-contain'
+                  style={{ zIndex: 1 }}
+                />
+              </div>
+            </div>
+            <div className='absolute inset-0 flex justify-start m-3 card-img_hover'>
+              <div
+                onClick={() => onPdfLinkClick(pdf_code_link)}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={pdficon}
+                  alt={pdficon}
+                  className='w-1/2 h-1/2 object-contain'
+                  style={{ zIndex: 2 }}
                 />
               </div>
             </div>
           </div>
-          <div className='mt-5'>
+          <div className='mt-5 h-[220px]'>
             <h3 className='text-white font-bold text-[24px]'>{name}</h3>
             <p className='mt-2 text-secondary text-[14px] font-vollkorn'>{description}</p>
+            <a href={pdf_code_link} target="_blank" rel="noopener noreferrer" className="text-theblue">Case Study</a><br />
+            <a href={figma_code_link} target="_blank" rel="noopener noreferrer" className="text-theblue">Prototype</a>
           </div>
           <div className='mt-4 flex flex-wrap gap-2'>
             {tags.map((tag) => (
@@ -55,11 +70,19 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link})
 }
 
 const Works = () => {
+  const handleFigmaLinkClick = (figma_code_link) => {
+    window.open(figma_code_link);
+  };
+
+  const handlePdfLinkClick = (pdf_code_link) => {
+    window.open(pdf_code_link);
+  };
+
   return (
     <>
     <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <h2 className={styles.sectionHeadText}>~Projects~</h2>
       </motion.div>
       <div className='w-full flex'>
         <motion.p
@@ -75,6 +98,8 @@ const Works = () => {
             key={`project-${index}`}
             index={index}
             {...project}
+            onFigmaLinkClick={() => handleFigmaLinkClick(project.figma_code_link)}
+            onPdfLinkClick={() => handlePdfLinkClick(project.pdf_code_link)}
           />
         ))}
       </div>

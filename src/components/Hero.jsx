@@ -11,8 +11,8 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 theblue-gradient" />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white font-vollkorn`}>Hi, I'm <span className="text-[#fbdfaf] font-newrocker">Angelia</span></h1>
-          <p className={`${styles.heroSubText} mt-2 font-vollkorn text-white-100`}>
+          <h1 className={`${styles.heroHeadText} text-white font-vollkorn`}>Hi, I'm <span className="text-theblue font-newrocker">Angelia</span></h1>
+          <p className={`${styles.heroSubText} mt-2 font-vollkorn text-secondary`}>
             I develop 3D animations, user <br className="sm:block hidden"/> interfaces and web applications.
           </p>
         </div>

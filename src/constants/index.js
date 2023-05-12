@@ -12,6 +12,7 @@ import {
     mongodb,
     git,
     figma,
+    pdficon,
     blender,
     krita,
     adobecc,
@@ -24,9 +25,11 @@ import {
     steak,
     tomb,
     meta,
-    carrent,
-    jobit,
-    tripguide,
+    calarts,
+    google,
+    batsall,
+    rustic,
+    luxxe,
     threejs,
   } from "../assets";
 
@@ -55,7 +58,7 @@ import {
       icon: web,
     },
     {
-      title: "React Developer",
+      title: "Front-End Dev",
       icon: mobile,
     },
     {
@@ -229,9 +232,8 @@ import {
         name: "Front-End Developer Specialization",
         company: "Meta",
         image: meta,
-        certlink: "https://coursera.org/share/bf4d077f483e0d1dfcdac1210607f119",
+        certlink: "https://angelia.seedofchaos.com/pdfs/Front End Dev Spec Meta Coursera GEVVXCKGP2QL.pdf",
       },
-      // other certifications
       {
         certs:[
           "Foundations of User Experience (UX) Design",
@@ -244,8 +246,8 @@ import {
         ],
         name: "Google UX Design Specialization",
         company: "Google",
-        image: "https://coursera.org/share/6a36bb169b492c228b071389186c3c92",
-        certlink: "https://coursera.org/share/6a36bb169b492c228b071389186c3c92",
+        image: google,
+        certlink: "https://angelia.seedofchaos.com/pdfs/UX Design Specialization Google - Coursera WHL77JDDSH4S.pdf",
       },
       {
         certs:[
@@ -256,65 +258,23 @@ import {
         ],
         name: "UX/UI Design Specialization",
         company: "CalArts",
-        image: "https://coursera.org/share/7c6518448dcc9596dec3f7bffffdb838",
-        certlink: "https://coursera.org/share/7c6518448dcc9596dec3f7bffffdb838",
+        image: calarts,
+        certlink: "https://angelia.seedofchaos.com/pdfs/UI UX Design Spec CalArts Coursera PJCCUD3PX3GV.pdf",
       },
     ];
 
-  const projects = [
+    const projects = [
     {
-      name: "Car Rent",
+      name: "Luxxe Gallery",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A new app for the Luxxe Gallery that will allow collectors to RSVP art shows, keep up with events at the gallery, find new artists and engage in regular AMAs with featured artists.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "illustrator",
+          color: "purple-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "figma",
           color: "green-text-gradient",
         },
         {
@@ -322,8 +282,53 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: luxxe,
+      figma_code_link: "https://www.figma.com/proto/tEXMAppzXhbujdBKUO5hai/HiFi-Luxxe-Gallery-Prototype-Website?type=design&node-id=266-638&scaling=contain&page-id=211%3A426&starting-point-node-id=266%3A638",
+      pdf_code_link: "https://angelia.seedofchaos.com/pdfs/Luxxe Gallery - Case study.pdf",
+    },
+    {
+      name: "Rustic Roots",
+      description:
+      "Phone application that enables users to order delivery from the restaurant, consult the menu and find out about current special offers.",
+      tags: [
+        {
+          name: "photoshop",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "figma",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: rustic,
+      figma_code_link: "https://www.figma.com/proto/ThFLGvqKlWvsmi6PO7q5bp/Rustic-Roots?type=design&node-id=19-2946&scaling=min-zoom&page-id=19%3A2877&starting-point-node-id=19%3A2946",
+      pdf_code_link: "https://angelia.seedofchaos.com/pdfs/Rustic Roots Visual Mockups.pdf",
+    },
+    {
+      name: "Batty Brigade",
+      description:
+        "The Batty Brigade conservation project is designed to promote awareness and engagement in bat conservation efforts, and to provide users with the tools and resources they need to help protect these important animals and their habitats.",
+      tags: [
+        {
+          name: "photoshop",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "figma",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: batsall,
+      figma_code_link: "https://www.figma.com/proto/3jBrHu35qnNf1OKNspNAa2/HiFiProto?type=design&node-id=58-6510&scaling=contain&page-id=13%3A1866&starting-point-node-id=58%3A6510",
+      pdf_code_link: "https://angelia.seedofchaos.com/pdfs/Batty Brigade - Case study.pdf",
     },
   ];
 

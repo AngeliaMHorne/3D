@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import pdficon from "./pdficon.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -16,7 +17,7 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 import blender from "./tech/blender.png";
 import krita from "./tech/krita.png";
 import adobecc from "./tech/adobecc.png";
@@ -30,11 +31,13 @@ import slime from "./company/slime.png";
 import steak from "./company/steak.png";
 import tomb from "./company/tomb.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import batsall from "./batsall.png";
+import rustic from "./rustic.png";
+import luxxe from "./luxxe.png";
 
 import meta from "./company/meta.png";
+import google from "./company/google.png";
+import calarts from "./company/calarts.png";
 
 export {
   logo,
@@ -47,6 +50,7 @@ export {
   close,
   css,
   figma,
+  pdficon,
   git,
   html,
   javascript,
@@ -64,9 +68,11 @@ export {
   steak,
   tomb,
   meta,
-  carrent,
-  jobit,
-  tripguide,
+  calarts,
+  google,
+  batsall,
+  rustic,
+  luxxe,
   blender,
   krita,
   adobecc,
