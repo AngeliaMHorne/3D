@@ -33,16 +33,7 @@ const Contact = () => {
     setLoading(true)
     
     emailjs.send(
-      'service_i9vdq08',
-      'template_k0jnugt',
-      {
-        from_name: form.name,
-        to_name: 'Angelia',
-        from_email: form.email,
-        to_email: 'angeliamhorne@gmail.com',
-        message: form.message,
-      },
-      'sTy_0xKpaPV0ncemz'
+
     )
     
     .then(() => {
