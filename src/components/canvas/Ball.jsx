@@ -19,8 +19,6 @@ const Ball = (props) => {
         <sphereGeometry args={[.85]} />
         <meshStandardMaterial
           color="#505050"
-          polygonOffset
-          polygonOffsetFactor={1}
         />
         <Decal
           position={[0, 0, 1]}
