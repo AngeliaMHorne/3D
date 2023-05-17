@@ -1,312 +1,275 @@
 {
-  "accessors": [
-    {
-      "bufferView": 0,
-      "componentType": 5125,
-      "count": 15360,
-      "type": "SCALAR"
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.4.49",
+        "version" : "2.0"
     },
-    {
-      "bufferView": 1,
-      "componentType": 5126,
-      "count": 3003,
-      "max": [
-        0.644948482513428,
-        1.76441979408264,
-        0.644948422908783
-      ],
-      "min": [
-        -0.644948482513428,
-        0.474522829055786,
-        -0.644948422908783
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 2,
-      "componentType": 5126,
-      "count": 3003,
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "componentType": 5126,
-      "count": 3003,
-      "type": "VEC4"
-    },
-    {
-      "bufferView": 4,
-      "componentType": 5126,
-      "count": 3003,
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 5,
-      "componentType": 5125,
-      "count": 162048,
-      "type": "SCALAR"
-    },
-    {
-      "bufferView": 6,
-      "componentType": 5126,
-      "count": 26860,
-      "max": [
-        1.23060739040375,
-        2.37340402603149,
-        1.24818444252014
-      ],
-      "min": [
-        -1.23259520530701,
-        -0.126842260360718,
-        -1.26772439479828
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 7,
-      "componentType": 5126,
-      "count": 26860,
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 8,
-      "componentType": 5126,
-      "count": 26860,
-      "type": "VEC4"
-    },
-    {
-      "bufferView": 9,
-      "componentType": 5126,
-      "count": 26860,
-      "type": "VEC2"
-    }
-  ],
-  "asset": {
-    "generator": "Adobe Substance 3D Painter 8.2.0",
-    "version": "2.0"
-  },
-  "bufferViews": [
-    {
-      "buffer": 0,
-      "byteLength": 61440,
-      "target": 34963
-    },
-    {
-      "buffer": 0,
-      "byteLength": 36036,
-      "byteOffset": 61440,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 36036,
-      "byteOffset": 97476,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 48048,
-      "byteOffset": 133512,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 24024,
-      "byteOffset": 181560,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 648192,
-      "byteOffset": 205584,
-      "target": 34963
-    },
-    {
-      "buffer": 0,
-      "byteLength": 322320,
-      "byteOffset": 853776,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 322320,
-      "byteOffset": 1176096,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 429760,
-      "byteOffset": 1498416,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 214880,
-      "byteOffset": 1928176,
-      "target": 34962
-    }
-  ],
-  "buffers": [
-    {
-      "byteLength": 2143056,
-      "uri": "Untitled.bin"
-    }
-  ],
-  "images": [
-    {
-      "uri": "Automotive led lights_baseColor.jpg"
-    },
-    {
-      "uri": "Automotive led lights_occlusionRoughnessMetallic.jpg"
-    },
-    {
-      "uri": "Automotive led lights_normal.jpg"
-    },
-    {
-      "uri": "Material.003_baseColor.jpg"
-    },
-    {
-      "uri": "Material.003_occlusionRoughnessMetallic.jpg"
-    },
-    {
-      "uri": "Material.003_normal.jpg"
-    }
-  ],
-  "materials": [
-    {
-      "alphaMode": "OPAQUE",
-      "name": "Automotive led lights",
-      "normalTexture": {
-        "index": 2
-      },
-      "occlusionTexture": {
-        "index": 1
-      },
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicRoughnessTexture": {
-          "index": 1
-        }
-      }
-    },
-    {
-      "alphaMode": "OPAQUE",
-      "name": "Material.003",
-      "normalTexture": {
-        "index": 5
-      },
-      "occlusionTexture": {
-        "index": 4
-      },
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 3
-        },
-        "metallicRoughnessTexture": {
-          "index": 4
-        }
-      }
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Icosphere-0",
-      "primitives": [
+    "extensionsUsed" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "extensionsRequired" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "scene" : 0,
+    "scenes" : [
         {
-          "attributes": {
-            "NORMAL": 2,
-            "POSITION": 1,
-            "TANGENT": 3,
-            "TEXCOORD_0": 4
-          },
-          "indices": 0,
-          "material": 0,
-          "mode": 4
+            "name" : "Scene",
+            "nodes" : [
+                2
+            ]
         }
-      ]
-    },
-    {
-      "name": "Icosphere-1",
-      "primitives": [
+    ],
+    "nodes" : [
         {
-          "attributes": {
-            "NORMAL": 7,
-            "POSITION": 6,
-            "TANGENT": 8,
-            "TEXCOORD_0": 9
-          },
-          "indices": 5,
-          "material": 1,
-          "mode": 4
+            "mesh" : 0,
+            "name" : "Icosphere-0"
+        },
+        {
+            "mesh" : 1,
+            "name" : "Icosphere-1"
+        },
+        {
+            "children" : [
+                0,
+                1
+            ],
+            "name" : "Icosphere",
+            "translation" : [
+                0,
+                0.0928037166595459,
+                0
+            ]
         }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "children": [
-        1,
-        2
-      ],
-      "name": "Icosphere",
-      "translation": [
-        0.0,
-        0.0928037166595459,
-        0.0
-      ]
-    },
-    {
-      "mesh": 0,
-      "name": "Icosphere-0"
-    },
-    {
-      "mesh": 1,
-      "name": "Icosphere-1"
-    }
-  ],
-  "samplers": [
-    {
-      "magFilter": 9729,
-      "minFilter": 9985,
-      "wrapS": 10497,
-      "wrapT": 10497
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "name": "Scene",
-      "nodes": [
-        0
-      ]
-    }
-  ],
-  "textures": [
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 1
-    },
-    {
-      "sampler": 0,
-      "source": 2
-    },
-    {
-      "sampler": 0,
-      "source": 3
-    },
-    {
-      "sampler": 0,
-      "source": 4
-    },
-    {
-      "sampler": 0,
-      "source": 5
-    }
-  ]
+    ],
+    "materials" : [
+        {
+            "name" : "Automotive led lights",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        },
+        {
+            "name" : "Material.003",
+            "normalTexture" : {
+                "index" : 3
+            },
+            "occlusionTexture" : {
+                "index" : 4
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 5
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 4
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Icosphere-0",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 0,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "TEXCOORD_0" : 1,
+                                "NORMAL" : 2
+                            }
+                        }
+                    },
+                    "indices" : 3,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Icosphere-1",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "TEXCOORD_0" : 5,
+                        "NORMAL" : 6
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 1,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "TEXCOORD_0" : 1,
+                                "NORMAL" : 2
+                            }
+                        }
+                    },
+                    "indices" : 7,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        },
+        {
+            "sampler" : 0,
+            "source" : 4
+        },
+        {
+            "sampler" : 0,
+            "source" : 5
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Automotive led lights_normal",
+            "uri" : "Automotive%20led%20lights_normal.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Automotive led lights_occlusionRoughnessMetallic",
+            "uri" : "Automotive%20led%20lights_occlusionRoughnessMetallic.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Automotive led lights_baseColor",
+            "uri" : "Automotive%20led%20lights_baseColor.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Material.003_normal",
+            "uri" : "Material_003_normal.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Material.003_occlusionRoughnessMetallic",
+            "uri" : "Material_003_occlusionRoughnessMetallic.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Material.003_baseColor",
+            "uri" : "Material_003_baseColor.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "componentType" : 5126,
+            "count" : 3003,
+            "max" : [
+                0.6449484825134277,
+                1.7644197940826416,
+                0.644948422908783
+            ],
+            "min" : [
+                -0.6449484825134277,
+                0.47452282905578613,
+                -0.644948422908783
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 3003,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 3003,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 15360,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 26860,
+            "max" : [
+                1.2306073904037476,
+                2.373404026031494,
+                1.2481844425201416
+            ],
+            "min" : [
+                -1.2325952053070068,
+                -0.12684226036071777,
+                -1.2677243947982788
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 26860,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 26860,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 162048,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 14662,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 143756,
+            "byteOffset" : 14664
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 158420,
+            "uri" : "Untitled.bin"
+        }
+    ]
 }

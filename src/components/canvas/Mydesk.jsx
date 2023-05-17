@@ -4,12 +4,13 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from "../Loader"
 
 const Mydesk = ({ isMobile }) => {
-  const desk = useGLTF("./mydesk/mydeskmodelslit.gltf")
+  const desk = useGLTF("./mydesk/ornatedesk1.gltf")
+
 
   return (
     <mesh>
-      <ambientLight position={[2.412, 6.594, -1.770]} intensity={1.66} color={"#23bdff"} />
-      <spotLight args={['#FFFFFF', 2.64, 0, .754, 1, 2]} position={[-0.074, 9.217, 11.780]} />
+      <ambientLight position={[2.412, 6.594, -1.770]} intensity={1.66} color={"#ffffff"} />
+      <spotLight args={['#FFFFFF', 2.64, 0, .754, 1, 2]} position={[-0.074, 3.217, 11.780]} />
 
       <primitive
         object={desk.scene}

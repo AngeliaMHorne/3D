@@ -1,8 +1,8 @@
 import logo from "./logo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import backend from "./backend.jpg";
+import creator from "./creator.jpg";
+import mobile from "./mobile.jpg";
+import web from "./web.jpg";
 import github from "./github.png";
 import pdficon from "./pdficon.png";
 import menu from "./menu.svg";
@@ -31,9 +31,9 @@ import slime from "./company/slime.png";
 import steak from "./company/steak.png";
 import tomb from "./company/tomb.png";
 
-import batsall from "./batsall.png";
-import rustic from "./rustic.png";
-import luxxe from "./luxxe.png";
+import batsall from "./batsall.jpg";
+import rustic from "./rustic.jpg";
+import luxxe from "./luxxe.jpg";
 
 import meta from "./company/meta.png";
 import google from "./company/google.png";

@@ -49,28 +49,28 @@ const CertificationCard = ({
 
 const Certifications = () => {
   return (
-    <div className={`mt-2 bg-black rounded-[20px]`}>
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>Qualifications</p>
-          <h2 className={styles.sectionHeadText}>~Certifications~</h2>
-        </motion.div>
-        <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn("", ", 0.1, 1")}
-          className='mt-3 text-secondary text-[17px] max-w-xl leading-[30px] font-vollkorn'
-        >
-          The following are recent specialization certifications I have completed. The appropriate certificates have been linked for verification.
-        </motion.p>
-      </div>
-      <div
-        className={`rounded-2xl ${styles.padding} min-h-[150px]`}
-      >
-      </div>
-      <div className={`pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-        {certs.map((cert, index) => (
-          <CertificationCard key={cert.name} index={index} {...cert} />
-        ))}
-      </div>
+    <div className={`mt-2 rounded-[20px]`}>
+    <motion.div variants={textVariant()}>
+      <p className={styles.sectionSubText}>Qualifications</p>
+      <h2 className={styles.sectionHeadText}>~Certifications~</h2>
+    </motion.div>
+    <div className='w-full flex'>
+    <motion.p
+      variants={fadeIn("", ", 0.1, 1")}
+      className='mt-3 text-secondary text-[17px] max-w-xl leading-[30px] font-vollkorn'
+    >
+      The following are recent specialization certifications I have completed. The appropriate certificates have been linked for verification.
+    </motion.p>
+    </div>
+    <div
+      className={`rounded-2xl ${styles.padding} min-h-[100px]`}
+    >
+    </div>
+    <div className={`pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      {certs.map((cert, index) => (
+        <CertificationCard key={cert.name} index={index} {...cert} />
+      ))}
+    </div>
     </div>
   );
 };
