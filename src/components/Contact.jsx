@@ -21,7 +21,7 @@ const Contact = () => {
   const handleChange = (e) => {
     const {target} = e
     const {name, value} = target
-    
+
     setForm({
       ...form,
       [name]: value,
@@ -31,20 +31,20 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
-    
+
     emailjs.send(
-      'service_i9vdq08',
+      'service_lhpmwfa',
       'template_k0jnugt',
       {
         from_name: form.name,
-        to_name: 'Angelia',
+        to_name: 'admin',
         from_email: form.email,
-        to_email: 'angeliamhorne@gmail.com',
+        to_email: 'admin@angelia.seedofchaos.com',
         message: form.message,
       },
-      'sTy_0xKpaPV0ncemz'
+      '0g_zn56syC-mRHNCP'
     )
-    
+
     .then(() => {
       setLoading(false)
       alert("Thank you! I will get back to you as soon as possible.")
@@ -75,7 +75,7 @@ const Contact = () => {
           className="mt-12 flex flex-col gap-8">
             <label className="flex flex-col">
               <span className="text-secondary cont-medium mb-4">Your Name</span>
-              <input 
+              <input
                 type="text"
                 name="name"
                 value={form.name}
@@ -86,7 +86,7 @@ const Contact = () => {
             </label>
             <label className="flex flex-col">
               <span className="text-secondary font-medium mb-4">Your Email</span>
-              <input 
+              <input
                 type="email"
                 name="email"
                 value={form.email}
@@ -108,7 +108,7 @@ const Contact = () => {
             </label>
             <button
               type="submit"
-              className="bg-theblue py-3 px-8 outline-none w-fit text-tertiary font-bold shadow-md shadow-primary rounded-xl"
+              className="bg-secondary hover:bg-theblue py-2 px-8 outline-none w-fit text-tertiary font-medium shadow-md shadow-primary rounded-xl"
               >
 
               {loading ? "Sending..." : "Send"}

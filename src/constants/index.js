@@ -52,18 +52,22 @@ import {
     {
       title: "Artist",
       icon: creator,
+      service_code_link: "https://youtube.com/playlist?list=PLVjRHI7wCfmaTQyiVNYnh79hWhPHhiwm9",
     },
     {
       title: "3D Creator",
       icon: web,
+      service_code_link: "https://www.youtube.com/@angeliaportfolio/featured",
     },
     {
       title: "Front-End Dev",
       icon: mobile,
+      service_code_link: "https://angelia.seedofchaos.com/portfolio/apps/mytube/",
     },
     {
       title: "UI/UX Specialist",
       icon: backend,
+      service_code_link: "https://www.figma.com/proto/tEXMAppzXhbujdBKUO5hai/HiFi-Luxxe-Gallery-Prototype-Website?type=design&node-id=266-638&scaling=contain&page-id=211%3A426&starting-point-node-id=266%3A638",
     },
   ];
 
@@ -140,7 +144,7 @@ import {
       title: "NFT Designer",
       company_name: "Independent",
       icon: lunabat,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "Sep 2021 - Feb 2022",
       points: [
         "Conceptualized, sculpted, textured, and animated bathead logo for Fang and its subsidiaries.",
@@ -166,7 +170,7 @@ import {
       title: "Head of Design",
       company_name: "Steak Stake",
       icon: steak,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "Apr 2021 - Oct 2021",
       points: [
         "Led and directed design team in establishing and implementing branding principles, resulting in a cohesive brand identity across all channels.",
@@ -178,7 +182,7 @@ import {
       title: "Freelance Artist",
       company_name: "Independent",
       icon: freelance,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "2007 - Jan 2020",
       points: [
         "Expansive list of projects conceived, created and completed in a myriad of real world art mediums. Examples available on request.",
@@ -188,7 +192,7 @@ import {
       title: "Owner/Operator/Dispatcher/Bookkeeper",
       company_name: "Atlas Towing, LLC",
       icon: tow,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "Aug 2006 - Sep 2007",
       points: [
         "From promotional material creation to writing Operators' manual, handling day to day operations to keeping the books, I did everything except drive the trucks.",
@@ -198,7 +202,7 @@ import {
       title: "Graphic Artist",
       company_name: "KOB-TV (NM NBC Affiliate)",
       icon: nbc,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "Jun 2003 - Jun 2004",
       points: [
         "All on-air graphics - OTS, FS, HS, Maps, Animations, etc. - for three newscasts daily.",
@@ -208,7 +212,7 @@ import {
       title: "Production Engineer",
       company_name: "WSLS-TV (VA NBC Affiliate), Fox (VA Fox Affiliate)",
       icon: nbcfox,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "May 2002 - Jun 2003",
       points: [
         "All on-air graphics - OTS, FS, HS, Maps, Animations, etc. - for four newscasts daily. During the live newscasts, I ran Chyron, Floor Directed, operated Floor Cams and held a top position in the web division of the station.",

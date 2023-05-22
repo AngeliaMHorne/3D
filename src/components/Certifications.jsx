@@ -15,10 +15,10 @@ const CertificationCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-tertiary p-10 rounded-3xl xs:w-[320px] w-full'
+    className='border-1 border-theblue border-opacity-10 theblue-gradient p-1 rounded-3xl xs:w-[320px] w-full'
   >
-
-      <div className='mt-1 flex justify-between items-center gap-1'>
+    <div className='bg-tertiary rounded-3xl p-4 px-9 h-full items-center flex-col cursor-pointer'>
+      <div className='bg-tertiary mt-1 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
           <p className='text-white font-medium text-[18px]'>
             {name}
@@ -43,6 +43,7 @@ const CertificationCard = ({
               <li className="font-vollkorn" key={certItem}>{certItem}</li>
             ))}
           </ul>
+    </div>
     </div>
   </motion.div>
 );

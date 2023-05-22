@@ -4,15 +4,12 @@ const Loader = () => {
   const { progress } = useProgress();
   return (
     <Html>
-      <span className='canvas-load'></span>
-      <p
-        style={{
-          fontSize: 22,
-          color: "#f1f1f1",
-          fontWeight: 800,
-          marginTop: 40,
-        }}
-      >{progress.toFixed(2)}%</p>
+      <p className='text-secondary absolute lg:text-[40px] w-full flex justify-center items-center mx-auto xl:flex-1'>
+        Loading
+      </p>
+      <p className='mt-20 text-theblue absolute lg:text-[40px] w-full flex justify-center items-center mx-auto xl:flex-1'>
+        {progress.toFixed(2)}%
+      </p>
     </Html>
   )
 }

@@ -18,13 +18,14 @@ module.exports = {
         "white-100": "#f3f3f3",
       },
       boxShadow: {
-        card: "0px 0px 150px -65px #23bdff",
+        card: "0px 0px 150px -15px #23bdff",
       },
       screens: {
-        xs: "450px",
+        xs: "450px"
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-new": "url('/src/assets/herobg2.png')",
       },
     },
   },

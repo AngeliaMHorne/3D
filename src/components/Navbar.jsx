@@ -7,6 +7,22 @@ import { logo, menu, close } from "../assets"
 const Navbar = () => {
   const [active, setActive] = useState(" ");
   const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav
@@ -22,7 +38,7 @@ const Navbar = () => {
           }}
         >
         <img src={logo} alt="Logo" className='w-12 h-12 object-contain'/>
-        <p className='text-white text-[18px] font-bold cursor-pointer flex'>Angelia Horne &nbsp;<span className='sm:block hidden'>Artist~Designer</span></p>
+        <p className='text-theblue text-[20px] font-bold cursor-pointer flex'>Angelia Horne &nbsp; &nbsp;<span className='sm:block hidden text-white'>Artist~Designer</span></p>
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -31,7 +47,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-theblue text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -43,7 +59,7 @@ const Navbar = () => {
           <img
           src={toggle ? close : menu}
           alt="Menu"
-          className='w-[28px] h-[28px] pbject contain cursor-pointer'
+          className='w-[28px] h-[28px] object-contain'
           onClick={() => setToggle(!toggle)}
           />
 
@@ -65,8 +81,6 @@ const Navbar = () => {
           </ul>
           </div>
         </div>
-
-
       </div>
     </nav>
   )

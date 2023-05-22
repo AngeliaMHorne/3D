@@ -37,6 +37,7 @@ const BallCanvas = ({title,icon}) => {
       dpr={[1, 2]}
       //frameloop='demand'
       gl={{preserveDrawingBuffer: true}}
+      className="cursor-pointer"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -45,7 +46,8 @@ const BallCanvas = ({title,icon}) => {
           //minPolarAngle={Math.PI / 2}
         />
         <Ball imgUrl={icon}
-        alt={title} />
+              alt={title}
+        />
       </Suspense>
       <Preload all />
     </Canvas>

@@ -6,25 +6,23 @@ import { services } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { fadeIn, textVariant } from '../utils/motion'
 
-
-const ServiceCard = ({ index, title, icon, service_code_link, onServiceLinkClick }) => (
+const ServiceCard = ({ index, title, icon }) => (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full theblue-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer"
-        onClick={() => onServiceLinkClick(service_code_link)}
-          options={{
+        className="w-full theblue-gradient p-[1px] rounded-[20px] shadow-card"
+        >
+          <div
+            options={{
               max: 45,
               scale: 1,
               speed: 450
             }}
-        >
-          <div
-            className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col cursor-pointer'
+            className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
             >
               <img
                 src={icon}
-                alt={title}
+                alt="Web Development"
                 className='w-30 h-30 object-contain'
               />
               <h3 className='text-white text-[20px] font-bold text-bold'>{title}</h3>
@@ -36,9 +34,6 @@ const ServiceCard = ({ index, title, icon, service_code_link, onServiceLinkClick
 
 
 const About = () => {
-  const handleServiceLinkClick = (service_code_link) => {
-    window.open(service_code_link);
-  };
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -55,10 +50,9 @@ const About = () => {
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard
-          key={`service-${index}`}
+          key={service.title}
           index={index}
           {...service}
-          onServiceLinkClick={() => handleServiceLinkClick(service.service_code_link)}
           />
         ))}
       </div>

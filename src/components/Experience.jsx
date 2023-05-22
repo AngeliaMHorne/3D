@@ -33,7 +33,7 @@ const ExperienceCard = ({experience}) => (
       {experience.points.map((point, index) => (
         <li
         key={`experience-point-${index}`}
-        className="font-vollkorn text-secondary text-[14px] pl-1 tracking-wider"
+        className="font-vollkorn text-secondary text-[16px] pl-1 tracking-wider"
         >
           {point}
         </li>
@@ -45,11 +45,14 @@ const ExperienceCard = ({experience}) => (
 const Experience = () => {
   return (
     <>
-    <motion.div variants={textVariant()}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}>
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>~Experience~</h2>
       </motion.div>
-    <div className="mt-14 flex flex-col">
+    <div className="mt-20 flex flex-col">
     <VerticalTimeline>
       {experiences.map((experience, index) => (
         <ExperienceCard
