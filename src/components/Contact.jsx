@@ -33,16 +33,6 @@ const Contact = () => {
     setLoading(true)
 
     emailjs.send(
-      'service_lhpmwfa',
-      'template_k0jnugt',
-      {
-        from_name: form.name,
-        to_name: 'admin',
-        from_email: form.email,
-        to_email: 'admin@angelia.seedofchaos.com',
-        message: form.message,
-      },
-      '0g_zn56syC-mRHNCP'
     )
 
     .then(() => {
