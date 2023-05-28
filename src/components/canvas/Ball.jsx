@@ -39,7 +39,7 @@ const BallCanvas = ({title,icon}) => {
       gl={{preserveDrawingBuffer: true}}
       className="cursor-pointer"
     >
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={null}>
         <OrbitControls
           enableZoom={false}
           //maxPolarAngle={Math.PI / 2}

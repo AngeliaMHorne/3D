@@ -33,13 +33,34 @@ import {
     threejs,
   } from "../assets";
 
+ /* test
   export const navLinks = [
     {
       id: "about",
       title: "About",
     },
     {
-      id: "work",
+      id: "experience-tech-certifications",
+      title: "Experience",
+    },
+    {
+      id: "works-video-gallery",
+      title: "Works",
+    },
+    {
+      id: "contact",
+      title: "Contact",
+    },
+  ];
+  */
+
+  export const navLinks = [
+    {
+      id: "about",
+      title: "About",
+    },
+    {
+      id: "works",
       title: "Work",
     },
     {
@@ -47,6 +68,7 @@ import {
       title: "Contact",
     },
   ];
+
 
   const services = [
     {
