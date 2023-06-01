@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'vollkorn': ['Vollkorn', 'serif'],
-        'newrocker': ['New Rocker', 'cursive'],
+        vollkorn: ["Vollkorn", "serif"],
+        newrocker: ["New Rocker", "cursive"],
       },
       colors: {
         primary: "#000000",
@@ -20,8 +20,11 @@ module.exports = {
       boxShadow: {
         card: "0px 0px 150px -15px #23bdff",
       },
+      boxShadow2: {
+        card: "0px 0px 50px -15px #23bdff",
+      },
       screens: {
-        xs: "450px"
+        xs: "450px",
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
@@ -29,5 +32,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
