@@ -25,10 +25,16 @@ module.exports = {
       },
       screens: {
         xs: "450px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "3xl": "1600px",
+        "7xl": "8000px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
-        "hero-new": "url('/src/assets/herobg2.png')",
+        main: "url('/src/assets/bg1.jpg')",
       },
     },
   },

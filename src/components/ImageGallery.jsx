@@ -4,11 +4,14 @@ import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
+import mymark from "../assets/imagegal/watermark.png";
 
 const ImageGallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [numColumns, setNumColumns] = useState(4); // Initial number of columns
+  const minColumns = 2;
+  const maxColumns = 6;
   const [galleryData, setGalleryData] = useState([]);
   const [isScrollDisabled, setIsScrollDisabled] = useState(false);
   const lightboxImageRef = useRef(null);
@@ -41,7 +44,10 @@ const ImageGallery = () => {
     const handleResize = () => {
       const containerWidth =
         document.getElementById("gallery-container").offsetWidth;
-      const columns = Math.floor(containerWidth / 250); // Adjust the width of each column here
+      const columns = Math.max(
+        minColumns,
+        Math.min(Math.floor(containerWidth / 150), maxColumns)
+      ); // Adjust the width of each column here
       setNumColumns(columns);
     };
 
@@ -50,7 +56,7 @@ const ImageGallery = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [minColumns, maxColumns]);
 
   useEffect(() => {
     const rearrangeGalleryData = () => {
@@ -103,9 +109,15 @@ const ImageGallery = () => {
     }
   };
 
+  const watermarkText = "Copyright © 2023 Angelia Horne";
+
   const openLightbox = (imageUri) => {
     setSelectedImage(imageUri);
     setIsLightboxOpen(true);
+  };
+
+  const handleImageContextMenu = (event) => {
+    event.preventDefault();
   };
 
   const closeLightbox = () => {
@@ -133,8 +145,8 @@ const ImageGallery = () => {
                 >
                   <img
                     src={item.poster}
-                    alt="Thumbnail"
-                    className="thumbnail-image object-fit hover:scale-105 ease-in-out duration-20 rounded-[20px] w-[full] h-auto px-2 py-3 flex justify-evenly items-center flex-col cursor-pointer"
+                    alt="Thumbnail" //300px width
+                    className="thumbnail-image object-fit hover:scale-105 ease-in-out duration-20 rounded-[20px] w-[full] h-auto px-2 py-2 flex justify-evenly items-center flex-col cursor-pointer"
                   />
                 </div>
               ))}
@@ -154,13 +166,20 @@ const ImageGallery = () => {
               {isLoading ? (
                 <div>Loading...</div>
               ) : (
-                <img
-                  src={selectedImage}
-                  alt="Lightbox"
-                  className="lightbox-image"
-                  ref={lightboxImageRef}
-                  onLoad={calculateImageDimensions}
-                />
+                <>
+                  <img
+                    src={selectedImage}
+                    alt="Lightbox"
+                    className="lightbox-image" //largest 1200px
+                    ref={lightboxImageRef}
+                    onLoad={calculateImageDimensions}
+                    onContextMenu={handleImageContextMenu}
+                  />
+                  <div className="watermark-container">
+                    {/* <img src={mymark} alt="Logo" className="watermark-logo" /> */}
+                    <div className="watermark-text">{watermarkText}</div>
+                  </div>
+                </>
               )}
             </div>
           </motion.div>

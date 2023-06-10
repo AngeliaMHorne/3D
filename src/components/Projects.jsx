@@ -1,4 +1,5 @@
 import React, { lazy } from "react";
+import Contact from "./Contact";
 
 const Works = lazy(() => import("./Works"));
 const VideoGallery = lazy(() => import("./VideoGallery"));
@@ -7,19 +8,12 @@ const ThreeDGallery = lazy(() => import("./ThreeDGallery"));
 
 const Projects = () => {
   return (
-    <div style={{ position: "relative" }}>
-      <div style={{ position: "relative", zIndex: "1" }}>
-        <div>
-          <Works />
-          <VideoGallery />
-          <div className="mb-[220px]">
-            <ThreeDGallery />
-          </div>
-        </div>
-        <div className="mb-[220px]">
-          <ImageGallery />
-        </div>
-      </div>
+    <div className="bg-cover bg-fixed bg-main">
+      <Works />
+      <VideoGallery />
+      <ThreeDGallery />
+      <ImageGallery />
+      <Contact />
     </div>
   );
 };

@@ -10,6 +10,7 @@ const VideoGallery = () => {
   const [currentVideo, setCurrentVideo] = useState(videoData[0].videoUri);
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
+  const watermarkText = "Copyright © 2023 Angelia Horne";
 
   useEffect(() => {
     if (videoRef.current) {
@@ -23,6 +24,16 @@ const VideoGallery = () => {
       }
     }
   }, [currentVideo, isPlaying]);
+
+  const playNextVideo = () => {
+    const currentIndex = videoData.findIndex(
+      (item) => item.videoUri === currentVideo
+    );
+    const nextIndex = (currentIndex + 1) % videoData.length;
+    const nextVideoUri = videoData[nextIndex].videoUri;
+    setCurrentVideo(nextVideoUri);
+    setIsPlaying(false); // Pause the video
+  };
 
   const handleVideoClick = () => {
     setIsPlaying((prevState) => !prevState);
@@ -65,17 +76,18 @@ const VideoGallery = () => {
               className="play-icon"
             />
           )}
+          <div className="watermark-container mb-3">
+            {/* <img src={mymark} alt="Logo" className="watermark-logo" /> */}
+            <div className="watermark-text">{watermarkText}</div>
+          </div>
         </div>
         <div className="videoplayer rounded-2xl relative flex justify-center items-center mx-auto xl:flex-1">
           <video
-            style={{ width: "100%", borderRadius: "10px" }}
-            //controls
+            style={{ width: "100%", maxHeight: "500px", borderRadius: "10px" }}
+            // controls
             controlsList="nodownload"
             ref={videoRef}
-            onEnded={() => {
-              setCurrentVideo(videoData[0].videoUri);
-              setIsPlaying(false);
-            }}
+            onEnded={playNextVideo}
           >
             <source src={currentVideo} type="video/mp4" />
           </video>
@@ -102,7 +114,7 @@ const VideoGallery = () => {
               key={item.id}
               src={item.poster}
               alt="Thumbnail"
-              className="w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-20"
+              className="w-[200px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-20"
               style={{ borderRadius: "20px" }}
               onClick={() => {
                 setCurrentVideo(item.videoUri);

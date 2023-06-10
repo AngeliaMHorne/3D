@@ -33,27 +33,6 @@ import {
   threejs,
 } from "../assets";
 
-/* test
-  export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "experience-tech-certifications",
-      title: "Experience",
-    },
-    {
-      id: "works-video-gallery",
-      title: "Works",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
-  ];
-  */
-
 export const navLinks = [
   {
     id: "about",
@@ -73,24 +52,27 @@ const services = [
   {
     title: "Artist",
     icon: creator,
-    service_code_link:
-      "https://youtube.com/playlist?list=PLVjRHI7wCfmaTQyiVNYnh79hWhPHhiwm9",
+    service_code_link: "https://angelia.seedofchaos.com/projects",
+    target: "_self",
   },
   {
-    title: "3D Creator",
+    title: "3D Animator",
     icon: web,
     service_code_link: "https://www.youtube.com/@angeliaportfolio/featured",
+    target: "_blank",
   },
   {
     title: "Front-End Dev",
     icon: mobile,
-    service_code_link: "https://angelia.seedofchaos.com/portfolio/apps/mytube/",
+    service_code_link: "https://github.com/AngeliaMHorne",
+    target: "_blank",
   },
   {
     title: "UI/UX Specialist",
     icon: backend,
     service_code_link:
       "https://www.figma.com/proto/tEXMAppzXhbujdBKUO5hai/HiFi-Luxxe-Gallery-Prototype-Website?type=design&node-id=266-638&scaling=contain&page-id=211%3A426&starting-point-node-id=266%3A638",
+    target: "_blank",
   },
 ];
 
